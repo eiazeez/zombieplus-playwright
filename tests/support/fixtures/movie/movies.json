@@ -1,0 +1,83 @@
+{
+    "create": {
+      "title": "Guerra Mundial Z",
+      "overview": "Gerry Lane, um ex-investigador das Nações Unidas, corre contra o tempo para parar uma pandemia que está derrubando exércitos e governos, ameaçando dizimar a humanidade.",
+      "company": "Paramount Pictures",
+      "release_year": 2013,
+      "featured": false,
+      "cover": "/images/world_war_z.png"
+    },
+    "28_days_later": {
+      "title": "28 Dias Depois",
+      "overview": "Após um vírus mortal se espalhar rapidamente pelo Reino Unido, um pequeno grupo de sobreviventes tenta encontrar refúgio.",
+      "company": "Fox Searchlight Pictures",
+      "release_year": 2002,
+      "featured": false,
+      "cover": "/images/28_days_later.png"
+    },
+    "zombieland": {
+      "title": "Zumbilândia",
+      "overview": "Um grupo de sobreviventes excêntricos atravessa os Estados Unidos infestados de zumbis em busca de um lugar seguro.",
+      "company": "Columbia Pictures",
+      "release_year": 2009,
+      "featured": false,
+      "cover": "/images/zombieland.png"
+    },
+    "dawn_of_the_dead": {
+      "title": "Madrugada dos Mortos",
+      "overview": "Um grupo de sobreviventes se refugia em um shopping center após um surto de zumbis.",
+      "company": "Universal Pictures",
+      "release_year": 2004,
+      "featured": false,
+      "cover": "/images/dawn_of_the_dead.png"
+    },
+    "resident_evil": {
+      "title": "Resident Evil",
+      "overview": "Uma equipe militar luta para conter um surto de zumbis em um complexo subterrâneo.",
+      "company": "Screen Gems",
+      "release_year": 2002,
+      "featured": false,
+      "cover": "/images/resident_evil.png"
+    },
+    "shaun_of_the_dead": {
+      "title": "Todo Mundo Quase Morto",
+      "overview": "Shaun e seu melhor amigo tentam salvar seus entes queridos durante um apocalipse zumbi.",
+      "company": "Universal Pictures",
+      "release_year": 2004,
+      "featured": false,
+      "cover": "/images/shaun_of_the_dead.png"
+    },
+    "train_to_busan": {
+      "title": "Invasão Zumbi",
+      "overview": "Passageiros em um trem de alta velocidade lutam para sobreviver a um surto de zumbis na Coreia do Sul.",
+      "company": "Next Entertainment World",
+      "release_year": 2016,
+      "featured": false,
+      "cover": "/images/train_to_busan.png"
+    },
+    "the_walking_dead": {
+      "title": "The Walking Dead",
+      "overview": "Um grupo de sobreviventes luta para se manter vivo em um mundo pós-apocalíptico dominado por zumbis.",
+      "company": "AMC",
+      "release_year": 2010,
+      "featured": false,
+      "cover": "/images/the_walking_dead.png"
+    },
+    "the_dead_dont_die": {
+      "title": "Os Mortos Não Morrem",
+      "overview": "Em uma pequena cidade, os mortos começam a se levantar dos túmulos, e os moradores lutam para sobreviver.",
+      "company": "Focus Features",
+      "release_year": 2019,
+      "featured": false,
+      "cover": "/images/the_dead_dont_die.png"
+    },
+    "i_am_legend": {
+      "title": "Eu Sou a Lenda",
+      "overview": "Um cientista luta para encontrar a cura para um vírus que transformou a humanidade em criaturas semelhantes a zumbis.",
+      "company": "Warner Bros.",
+      "release_year": 2007,
+      "featured": false,
+      "cover": "/images/i_am_legend.png"
+    }
+  }
+  
