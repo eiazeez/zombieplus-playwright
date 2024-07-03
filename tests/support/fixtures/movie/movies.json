@@ -4,8 +4,8 @@
       "overview": "Gerry Lane, um ex-investigador das Nações Unidas, corre contra o tempo para parar uma pandemia que está derrubando exércitos e governos, ameaçando dizimar a humanidade.",
       "company": "Paramount Pictures",
       "release_year": 2013,
-      "featured": false,
-      "cover": "/images/world_war_z.png"
+      "featured": true,
+      "cover": "/images/wwz.png"
     },
     "28_days_later": {
       "title": "28 Dias Depois",

@@ -1,0 +1,7 @@
+{ 
+    "admin": {
+        "name": "Admin",
+        "email":"admin@zombieplus.com",
+        "password": "pwd123"
+    }
+}

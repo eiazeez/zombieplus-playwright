@@ -1,25 +1,26 @@
 const { test: base } = require('@playwright/test')
 
-import { LoginPage } from '../support/pages/LoginPage.js'
-import { MoviesPage } from '../support/pages/MoviesPage.js'
+import { Login } from './actions/Login.js'
+import { Movies } from './actions/Movies.js'
 import { Header } from '../support/components/Header.js'
 import { Toast } from '../support/components/Toast.js'
-import { LandingPage } from '../support/pages/LandingPage.js'
+import { Leads } from './actions/Leads.js'
 import { Requests } from '../support/api/Request.js'
 
 const test = base.extend({
 
     pw: async ({ page, request }, use) => {
 
-        await use({
-            ...page, 
-            landingPage: new LandingPage(page),
-            loginPage: new LoginPage(page),
-            moviesPage: new MoviesPage(page),
-            header: new Header(page),
-            toast: new Toast(page),
-            requests: new Requests(request)
-        })
+        const context = page
+
+        context['leads'] = new Leads(page)
+        context['login']   = new Login(page)
+        context['movies']  = new Movies(page)
+        context['header']      = new Header(page)
+        context['toast']       = new Toast(page)
+        context['requests']    = new Requests(request)
+
+        await use(context)
 
     }
 

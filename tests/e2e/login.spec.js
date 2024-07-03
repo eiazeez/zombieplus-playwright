@@ -1,14 +1,15 @@
 const {test} = require('../support')
+const user = require('../support/fixtures/user.json')
 
 test('Deve logar no administrador', async ({pw})=> {
 
-    const user = {email: "admin@zombieplus.com", password: "pwd123"}
+    const admin = user.admin
 
-    await pw.loginPage.visit()
-    await pw.loginPage.fillForm(user)
-    await pw.loginPage.submitForm()
+    await pw.login.visit()
+    await pw.login.fillForm(admin)
+    await pw.login.submitForm()
 
-    await pw.moviesPage.isLoggedIn()
+    await pw.login.isLoggedIn(admin.name)
     
 })
 
@@ -16,9 +17,9 @@ test('Não deve logar com senha incorreta', async ({pw})=> {
 
     const user = {email: "admin@zombieplus.com", password: "senharuim"}
 
-    await pw.loginPage.visit()
-    await pw.loginPage.fillForm(user)
-    await pw.loginPage.submitForm()
+    await pw.login.visit()
+    await pw.login.fillForm(user)
+    await pw.login.submitForm()
 
     const message = 'Oops!Ocorreu um erro ao tentar efetuar o login. Por favor, verifique suas credenciais e tente novamente.'
 
@@ -30,11 +31,11 @@ test('Não deve logar quando o email não é preenchido', async ({pw})=> {
 
     const user = {password: "senharuim"}
 
-    await pw.loginPage.visit()
-    await pw.loginPage.fillForm(user)
-    await pw.loginPage.submitForm()
+    await pw.login.visit()
+    await pw.login.fillForm(user)
+    await pw.login.submitForm()
 
-    await pw.loginPage.alertShouldHave('Campo obrigatório')
+    await pw.login.alertShouldHave('Campo obrigatório')
 
 })
 
@@ -42,20 +43,20 @@ test('Não deve logar quando a senha não é preenchida', async ({pw})=> {
 
     const user = {email: "admin@zombieplus.com"}
 
-    await pw.loginPage.visit()
-    await pw.loginPage.fillForm(user)
-    await pw.loginPage.submitForm()
+    await pw.login.visit()
+    await pw.login.fillForm(user)
+    await pw.login.submitForm()
 
-    await pw.loginPage.alertShouldHave('Campo obrigatório')
+    await pw.login.alertShouldHave('Campo obrigatório')
 
 })
 
 test('Não deve logar quando nenhum campo é preenchido', async ({pw})=> {
 
-    await pw.loginPage.visit()
-    await pw.loginPage.submitForm()
+    await pw.login.visit()
+    await pw.login.submitForm()
 
-    await pw.loginPage.alertShouldHave(['Campo obrigatório', 'Campo obrigatório'])
+    await pw.login.alertShouldHave(['Campo obrigatório', 'Campo obrigatório'])
 
 })
 
@@ -63,10 +64,10 @@ test('Não deve logar quando o email está incorreto', async ({pw})=> {
 
     const user = {email: "emailruim.com", password: "senharuim"}
 
-    await pw.loginPage.visit()
-    await pw.loginPage.fillForm(user)
-    await pw.loginPage.submitForm()
+    await pw.login.visit()
+    await pw.login.fillForm(user)
+    await pw.login.submitForm()
 
-    await pw.loginPage.alertShouldHave('Email incorreto')
+    await pw.login.alertShouldHave('Email incorreto')
 
 })
