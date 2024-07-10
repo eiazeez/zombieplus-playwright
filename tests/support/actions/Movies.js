@@ -7,7 +7,6 @@ export class Movies {
     }
 
     async fillNewMovieForm (movie) {
-
         await expect(this.page.getByText('Cadastrar novo Filme')).toBeVisible()
 
         await this.page.fill('input[name=title]', movie.title)
@@ -18,7 +17,6 @@ export class Movies {
         await this.page.locator('.react-select__option').filter({hasText: movie.release_year}).click()
         if (movie.cover) await this.page.locator('input[name=cover]').setInputFiles('tests/support/fixtures/movie' + movie.cover)
         if (movie.featured) await this.page.locator('.featured .react-switch').click()
-
     }
 
     async submitForm() {
@@ -26,10 +24,20 @@ export class Movies {
     }
 
     async alertShouldHaveText(text) {
-
         const alert = this.page.locator('.fields .alert')
 
         await expect(alert).toHaveText(text)
+    }
+
+    async removeMovie(movie) {
+        await this.page.getByRole('row', { name: movie.title }).getByRole('button').click()
+        await this.page.locator('.confirm-removal').click()
+    }
+
+    async searchedMovie(movie) {
+
+        const rows = this.page.getByRole('row')
+        await expect(rows).toContainText(movie)
 
     }
 

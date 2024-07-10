@@ -7,6 +7,47 @@
       "featured": true,
       "cover": "/images/wwz.png"
     },
+    "duplicated": {
+      "title": "Zumbilândia",
+      "overview": "Um grupo de sobreviventes excêntricos atravessa os Estados Unidos infestados de zumbis em busca de um lugar seguro.",
+      "company": "Columbia Pictures",
+      "release_year": 2009,
+      "featured": true,
+      "cover": "/images/zumbilandia.jpg"
+    },
+    "to_remove": {
+      "title": "Resident Evil",
+      "overview": "Uma equipe militar luta para conter um surto de zumbis em um complexo subterrâneo.",
+      "company": "Universal Pictures",
+      "release_year": 2002,
+      "featured": false,
+      "cover": "/images/resident_evil.png"
+    },
+    "search": {
+      "input": "morto",
+      "output": [
+        "Todo Mundo Quase Morto",
+        "Madrugada dos Mortos"
+      ],
+      "data": [
+        {
+          "title": "Todo Mundo Quase Morto",
+          "overview": "Shaun e seu melhor amigo tentam salvar seus entes queridos durante um apocalipse zumbi.",
+          "company": "Universal Pictures",
+          "release_year": 2004,
+          "featured": false,
+          "cover": "/images/shaun_of_the_dead.png"
+        },
+        {
+          "title": "Madrugada dos Mortos",
+          "overview": "Um grupo de sobreviventes se refugia em um shopping center após um surto de zumbis.",
+          "company": "Universal Pictures",
+          "release_year": 2004,
+          "featured": false,
+          "cover": "/images/madrugada.jpg"
+        }
+      ]
+    },
     "28_days_later": {
       "title": "28 Dias Depois",
       "overview": "Após um vírus mortal se espalhar rapidamente pelo Reino Unido, um pequeno grupo de sobreviventes tenta encontrar refúgio.",
@@ -14,38 +55,6 @@
       "release_year": 2002,
       "featured": false,
       "cover": "/images/28_days_later.png"
-    },
-    "zombieland": {
-      "title": "Zumbilândia",
-      "overview": "Um grupo de sobreviventes excêntricos atravessa os Estados Unidos infestados de zumbis em busca de um lugar seguro.",
-      "company": "Columbia Pictures",
-      "release_year": 2009,
-      "featured": false,
-      "cover": "/images/zombieland.png"
-    },
-    "dawn_of_the_dead": {
-      "title": "Madrugada dos Mortos",
-      "overview": "Um grupo de sobreviventes se refugia em um shopping center após um surto de zumbis.",
-      "company": "Universal Pictures",
-      "release_year": 2004,
-      "featured": false,
-      "cover": "/images/dawn_of_the_dead.png"
-    },
-    "resident_evil": {
-      "title": "Resident Evil",
-      "overview": "Uma equipe militar luta para conter um surto de zumbis em um complexo subterrâneo.",
-      "company": "Screen Gems",
-      "release_year": 2002,
-      "featured": false,
-      "cover": "/images/resident_evil.png"
-    },
-    "shaun_of_the_dead": {
-      "title": "Todo Mundo Quase Morto",
-      "overview": "Shaun e seu melhor amigo tentam salvar seus entes queridos durante um apocalipse zumbi.",
-      "company": "Universal Pictures",
-      "release_year": 2004,
-      "featured": false,
-      "cover": "/images/shaun_of_the_dead.png"
     },
     "train_to_busan": {
       "title": "Invasão Zumbi",
@@ -62,14 +71,6 @@
       "release_year": 2010,
       "featured": false,
       "cover": "/images/the_walking_dead.png"
-    },
-    "the_dead_dont_die": {
-      "title": "Os Mortos Não Morrem",
-      "overview": "Em uma pequena cidade, os mortos começam a se levantar dos túmulos, e os moradores lutam para sobreviver.",
-      "company": "Focus Features",
-      "release_year": 2019,
-      "featured": false,
-      "cover": "/images/the_dead_dont_die.png"
     },
     "i_am_legend": {
       "title": "Eu Sou a Lenda",

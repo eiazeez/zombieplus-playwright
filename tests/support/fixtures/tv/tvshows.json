@@ -1,0 +1,55 @@
+{
+    "create": {
+      "title": "The Last of Us",
+      "overview": "Em um mundo pós-apocalíptico devastado por uma infecção fúngica que transforma os humanos em criaturas agressivas, Joel e Ellie, uma jovem resistente à infecção, embarcam em uma jornada perigosa para encontrar a cura.",
+      "company": "Netflix",
+      "release_year": 2023,
+      "featured": false,
+      "cover": "/images/the_last_of_us.png",
+      "seasons": "1"
+  },
+    "to_remove": {
+    "title": "The Walking Dead",
+    "overview": "Um grupo de sobreviventes luta para se manter vivo em um mundo pós-apocalíptico dominado por zumbis.",
+    "company": "Universal Pictures",
+    "release_year": 2010,
+    "featured": false,
+    "cover": "/images/the_walking_dead.jpg",
+    "seasons": "11"
+  },
+  "duplicated": {
+    "title": "Daybreak",
+    "overview": "Um adolescente procura sua namorada em uma Los Angeles pós-apocalíptica infestada de gangues e criaturas semelhantes a zumbis.",
+    "company": "Netflix",
+    "release_year": 2019,
+    "featured": false,
+    "cover": "/images/daybreak.jpg",
+    "seasons": "1"
+  },
+  "search": {
+      "input": "dead",
+      "output": [
+        "Dead Set",
+        "Fear Walkings Deads"
+      ],
+      "data": [
+        {
+          "title": "Dead Set",
+          "overview": "Os competidores de um reality show descobrem que estão no meio de um apocalipse zumbi e lutam para sobreviver.",
+          "company": "Netflix",
+          "release_year": 2008,
+          "featured": false,
+          "seasons": "1"
+        },
+        {
+          "title": "Fear Walkings Deads",
+          "overview": "Uma família luta para sobreviver em um mundo em colapso devido a uma misteriosa epidemia de zumbis.",
+          "company": "Netflix",
+          "release_year": 2015,
+          "featured": false,
+          "seasons": "8"
+        }
+      ]
+    }
+  }
+  

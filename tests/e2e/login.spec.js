@@ -21,9 +21,9 @@ test('Não deve logar com senha incorreta', async ({pw})=> {
     await pw.login.fillForm(user)
     await pw.login.submitForm()
 
-    const message = 'Oops!Ocorreu um erro ao tentar efetuar o login. Por favor, verifique suas credenciais e tente novamente.'
+    const message = 'Ocorreu um erro ao tentar efetuar o login. Por favor, verifique suas credenciais e tente novamente.'
 
-    await pw.toast.shouldContainText(message)
+    await pw.modal.shouldContainText(message)
 
 })
 

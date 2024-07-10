@@ -12,4 +12,17 @@ export class Header {
 
     }
 
+    async searchFor(text) {
+
+        await this.page.fill('input[placeholder="Busque pelo nome"]', text)
+        await this.page.click('.actions button')
+
+    }
+
+    async goToTvShows() {
+
+        await this.page.locator('a[href="/admin/tvshows"]').click()
+
+    }
+
 }
